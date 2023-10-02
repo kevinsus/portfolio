@@ -1,0 +1,61 @@
+.header-container {
+    padding: 15rem 10rem;
+    display: flex;
+}
+
+.header-container_left {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+.header-container_left hr {
+    position: relative;
+    border: none;
+    height: 12px;
+    width: 45rem;
+    border-top: 8px solid #0088a9;
+    margin-bottom: 50px;
+}
+
+.header-container_left h1 {
+    font-size: 5rem;
+}
+
+.header-container_left h1 > span {
+    color: #0088a9;
+}
+
+.header-container_left h3 {
+    font-size: 2.5rem;
+    padding: 0.5rem 0rem 2rem 0rem;
+}
+
+.header-container_left p {
+    font-size: 25px;
+}
+
+.header-container_btn {
+    padding: 5rem 0rem 2rem 0rem;
+    font-size: 25px;
+}
+
+.header-container_btn a {
+    padding: 0rem 5rem;
+}
+
+.header-container_right img {
+    width: 25rem;
+    animation: profile_animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}

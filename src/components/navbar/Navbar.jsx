@@ -1,12 +1,12 @@
 import React from 'react'
 import './navbar.css'
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+// import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 
 const Navbar = () => {
   return (
     <div className='navbar-links'>
       <div className='navbar-links_logo'>
-        <h3>Kevin.dev</h3>
+        <h1><span>K</span> evin.S</h1>
       </div>
       <div className='navbar-links_containers'>
         <ul>

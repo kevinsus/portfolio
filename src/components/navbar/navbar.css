@@ -1,7 +1,11 @@
 .navbar-links {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+    padding: 3rem 5rem;
     background-color: white;
     display: flex;
-    flex-direction: row;
     align-items: center;
     font-family: 'Libre Baskerville', serif;
     font-family: 'Outfit', sans-serif;
@@ -11,32 +15,28 @@
     -moz-box-shadow: 0px 4px 5px 0px rgba(114,114,114,0.75);
 }
 
-.navbar-links_logo {
-    padding: 2rem 5rem;
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-}
-
 .navbar-links_containers ul {
-    padding: 2rem 5rem;
     display: flex;
-    flex-direction: row;
     gap: 4rem;
 }
 
-.navbar-links_logo h3 {
+.navbar-links_logo h1 {
     color: black;
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
+    font-weight: 800;
+}
+
+.navbar-links_logo span {
+    color: #0088a9;
 }
 
 .navbar-links_containers li,
 .navbar-links_containers a {
     font-size: 1.6rem;
     color: black;
-    font-weight: 900;
     list-style-type: none;
+    font-weight: Bold;
 }
 
 .navbar-links_containers li a {
