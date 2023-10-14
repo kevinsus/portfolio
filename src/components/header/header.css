@@ -158,6 +158,11 @@
         border-top: 6px solid #27272a;
         margin-bottom: 1rem;
     }
+
+    .header-container_left h1 > span {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 2px #27272a;
+    }
     
     .header-container_left p {
         font-size: 1.2rem;
@@ -224,6 +229,11 @@
         width: calc(100% - 0.01rem); /* Subtract 2rem for left and right margin */
         border-top: 4px solid #27272a;
         margin-bottom: 1rem;
+    }
+
+    .header-container_left h1 > span {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #27272a;
     }
     
     .header-container_left p {
