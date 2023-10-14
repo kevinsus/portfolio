@@ -1,0 +1,140 @@
+.aboutMe-section {
+    max-width: 1500px;
+    margin: auto;
+    padding: 0rem 2rem;
+}
+
+.aboutMe-section_skills {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.aboutMe-header {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.aboutMe-section_skills .card1 {
+    padding: 3rem 2rem;
+    color: white;
+    background-color: #27272a;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.aboutMe-section_skills .card1:hover {
+    background-color: rgb(100, 100, 100);
+    border-color: #fff;
+}
+
+.card1 h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card1 hr {
+    border: none;
+    height: 12px;
+    width: 39rem;
+    border-top: 4px solid white;
+    margin-bottom: 10px;
+}
+
+.p1 {
+    margin-bottom: 30px;
+}
+
+.card1 p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card1 li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.aboutMe-section_technical {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1500px){
+    .card1 hr {
+        width: calc(100% - 0.01rem);
+        border-top: 3.5px solid white;
+    }
+}
+
+@media (max-width: 1200px){
+    .aboutMe-section_skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .aboutMe-section_skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card1 hr {
+        width: calc(100% - 0.01rem);
+        border-top: 3.5px solid white;
+    }
+
+    .aboutMe-header {
+        font-size: 2rem;
+    }
+
+    .card1 h4 {
+        font-size: 1.6rem;
+    }
+
+    .card1 p {
+        font-size: 1.2rem;
+    }
+    
+    .card1 li {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px){
+    .aboutMe-section_skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card1 hr {
+        width: calc(100% - 0.01rem);
+        border-top: 3px solid white;
+    }
+
+    .aboutMe-header {
+        font-size: 1.8rem;
+    }
+
+    .card1 h4 {
+        font-size: 1.2rem;
+    }
+
+    .card1 p {
+        font-size: 0.8rem;
+    }
+    
+    .card1 li {
+        font-size: 1rem;
+    }
+}

@@ -8,10 +8,12 @@
 }
 
 body {
-    background: #F0F0F0;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Outfit', sans-serif;
+    background-image: url('assets/triangle.jpg');
+    background-size: cover;
 }
 
-li, a, button {
-    color: unset;
+a {
     text-decoration: none;
 }

@@ -1,27 +1,25 @@
-.navbar-links {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    
-    padding: 3rem 5rem;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Outfit', sans-serif;
-    justify-content: space-between;
+.navbar-outer {
+    background-color: #27272a;
+    position: fixed;
+    width: 100%;
     box-shadow: 0px 4px 5px 0px rgba(114,114,114,0.75);
     -webkit-box-shadow: 0px 4px 5px 0px rgba(114,114,114,0.75);
     -moz-box-shadow: 0px 4px 5px 0px rgba(114,114,114,0.75);
 }
 
-.navbar-links_containers ul {
+.navbar-links {
+    max-width: 1500px;
+    margin: auto;
+    padding: 2rem;
     display: flex;
-    gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
+/* LOGO */
 .navbar-links_logo h1 {
-    color: black;
+    color: white;
     font-size: 2rem;
     cursor: pointer;
     font-weight: 800;
@@ -31,17 +29,85 @@
     color: #0088a9;
 }
 
-.navbar-links_containers li,
-.navbar-links_containers a {
-    font-size: 1.6rem;
-    color: black;
-    list-style-type: none;
-    font-weight: Bold;
+/* LINKS */
+.navbar-links_containers ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
 }
 
-.navbar-links_containers li a {
-    transition: all 0.3s ease 0;
+.navbar-links_containers {
+    font-size: 1.6rem;
+    color: white;
+    list-style-type: none;
+    font-weight: Bold;
+    cursor: pointer;
 }
-.navbar-links_containers li a:hover {
-    color: #0088a9;
+
+.navbar-links_containers a {
+    transition: all 0.3s ease;
+}
+.navbar-links_containers a:hover {
+    color: rgb(100, 100, 100);
+}
+
+/* Hamburger icon */
+.navbar-links_ham {
+    /* Make button disappear */
+    display: none;
+}
+
+@media (width < 900px){
+    .navbar-links_logo h1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .navbar-links_containers {
+        font-size: 1.1rem;
+    }
+
+    .navbar-links_ham {
+        /* Make button disappear */
+        display: none;
+    }
+}
+
+@media (width < 600px) {
+    .navbar-links_logo h1 {
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+
+    .navbar-links_primary {
+        position: fixed;
+        flex-direction: column;
+        inset: 0 0 0 55%;
+        padding: min(30vh, 10rem) 2rem;
+        font-size: 1.2rem;
+        /* Make background transparent and blur*/
+        background: hsla(0, 0%, 0%, 0.5);
+        backdrop-filter: blur(1rem);
+
+        /* Moving the navigation (Make it disappear) */
+        transform: translateX(100%);
+        /* Add transition for smoother animation */
+        transition: transform 250ms ease-in;
+    }
+
+    .navbar-links_primary.visible {
+        /* Moving the navigation (Make it appear) */
+        transform: translateX(0%);
+    }
+
+    .navbar-links_ham {
+        position: absolute;
+        width: 1.5rem;
+        /* Move the location */
+        top: 2.5rem;
+        right: 2rem;
+        z-index: 9999;
+        /* Make button appear (forward) */
+        display: block;
+    }
 }
