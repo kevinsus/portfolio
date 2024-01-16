@@ -302,9 +302,13 @@
     }
 
     .project-container_card__right1 img {
-        width: calc(100% - 0.01rem);
-        height: fit-content;
+        /* width: calc(100% - 0.01rem); */
+        /* height: fit-content; */
         border-radius: 15px;
+
+        inline-size: 100%;
+        aspect-ratio: 16/13;
+        object-fit: cover;
     }
 
     .project-container_header h3 {
