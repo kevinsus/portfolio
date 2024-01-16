@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
-
+import desk from '../../assets/desk.jpg'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -8,29 +9,16 @@ const About = () => {
       <h2 className='aboutMe-header'>About ME</h2>
       <div className='aboutMe-section_skills'>
         <div className="card1">
-          <h4>Career Objective</h4>
-          <hr />
-          <p className='p1'>Committed to continuous learning and innovation, I aim to join a dynamic team where I can apply my coding proficiency and collaborative mindset to develop cutting-edge solutions and foster technological advancement in the industry.</p>
-        </div>
-        <div className="card1">
-          <h4>Technical Skills</h4>
-          <hr />
-          <div className="aboutMe-section_technical">
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Java</li>
-              <li>Javascript</li>
-              <li>Typescript</li>
-            </ul> 
-            <ul>
-              <li>REACT JS</li>
-              <li>SQL</li>
-              <li>Python</li>
-              <li>MIPS</li>
-            </ul>
+          <div className="desk-pic">
+            <img src={desk} alt="desk"/>
           </div>
         </div>
+        <Link to='/About' className="card1">
+          <h4>A dedicated Front-end Developer based in Sydney, Australia 📍</h4>
+          <hr />
+          <p className='p1'>As a passionate and result-oriented student, I'm eager to contribute skills and passion in a part-time or internship role within the software industry. I'm seeking the role to develop cutting-edge solutions and foster technological advancement in the software industry. </p>
+          <p className='p1'>I am excited to bring a fresh perspective to the world, I'm ready to make a meaningful impact with my abilities. </p>
+        </Link>
       </div>
     </div>
   )

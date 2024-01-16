@@ -1,0 +1,50 @@
+/* POPUP ERROR MESSAGE */
+.popup_Error {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    background: hsla(0, 0%, 0%, 0.100);
+    backdrop-filter: blur(1rem);
+    height: 100vh;
+    width: 100%;
+}
+
+.popup_Wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup_Container {
+    border-radius: 20px;
+    border: 2px solid gray;
+    color: black;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    padding-top: 2rem;
+}
+
+.action > button {
+    margin: 1rem;
+    padding: 0.5rem 15rem;
+
+    font-size: 1.2rem;
+
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+
+}
+
+.action > button:hover {
+    cursor: pointer;
+}

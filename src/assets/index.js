@@ -1,0 +1,5 @@
+export { default as UNSW } from './UNSW.png'
+export { default as simpleBgWhite } from './simple-bg-white.jpg'
+export { default as desk } from './desk.jpg'
+export { default as studyBg } from './studyBg.jpg'
+export { default as programmingC } from './coreui-c.svg'

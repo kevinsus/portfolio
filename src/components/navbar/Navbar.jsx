@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { Link as ScrollLink } from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom'
+
 import './navbar.css'
-import {Link} from 'react-scroll'
 import hamburger from '../../assets/hamLogo.png'
 
 const Navbar = () => {
@@ -13,16 +15,16 @@ const Navbar = () => {
   return (
     <div className="navbar-outer">
       <div className='navbar-links'>
-        <div className='navbar-links_logo'>
+        <RouterLink to='/' className='navbar-links_logo'>
           <h1><span>K</span> evin.S</h1>
-        </div>
+        </RouterLink>
         <img src={hamburger} className='navbar-links_ham' alt='Menu' onClick={toggleVisibility} />
         <div className='navbar-links_containers'>
           <ul className={`navbar-links_primary ${isVisible ? 'visible' : ''}`}>
-            <li><Link to="hero" spy={true} smooth={true} offset={-130} duration={10}>Home</Link></li>
-            <li><Link to="about" spy={true} smooth={true} offset={-190} duration={10}>About</Link></li>
-            <li><Link to="projects" spy={true} smooth={true} offset={-150} duration={10}>Projects</Link></li>
-            <li><Link to="contact" spy={true} smooth={true} offset={-100} duration={10}>Contact</Link></li>
+            <li><RouterLink to='/'>Home</RouterLink></li>
+            <li><RouterLink to='/about'>About</RouterLink></li>
+            <li><RouterLink to='/projects' state={{ position: 0 }}>Projects</RouterLink></li>
+            <li><ScrollLink to="contact" spy={true} smooth={true} offset={-100} duration={10}>Contact</ScrollLink></li>
           </ul>
         </div>
       </div>

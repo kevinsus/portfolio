@@ -8,7 +8,7 @@
     margin-top: 2rem;
     margin-bottom: 4rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40fr 60fr;
     gap: 2rem;
 }
 
@@ -22,7 +22,7 @@
 .aboutMe-section_skills .card1 {
     padding: 3rem 2rem;
     color: white;
-    background-color: #27272a;
+    background-color: #323232;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
@@ -33,11 +33,33 @@
     border-color: #fff;
 }
 
+.card1:first-child {
+    padding: 0rem;
+    background-color: transparent;
+}
+
+.card1:first-child:hover {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+/* IMAGE */
+
+.aboutMe-section_skills .card1:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.desk-pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
 .card1 h4 {
     margin-bottom: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    text-align: center;
 }
 
 .card1 hr {
@@ -55,22 +77,8 @@
 .card1 p {
     font-size: 1.3rem;
     font-weight: 400;
-    text-align: center;
 }
 
-.card1 li {
-    list-style: none;
-    font-size: 1.3rem;
-    font-weight: 400;
-    text-align: center;
-}
-
-.aboutMe-section_technical {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
 
 @media (max-width: 1500px){
     .card1 hr {
@@ -106,10 +114,6 @@
     .card1 p {
         font-size: 1.2rem;
     }
-    
-    .card1 li {
-        font-size: 1.2rem;
-    }
 }
 
 @media (max-width: 600px){
@@ -133,8 +137,9 @@
     .card1 p {
         font-size: 0.8rem;
     }
-    
-    .card1 li {
-        font-size: 1rem;
+
+    .aboutMe-section_skills > .card1 > .desk-pic img {
+        border-radius: 15px;
+        height: 15rem;
     }
 }

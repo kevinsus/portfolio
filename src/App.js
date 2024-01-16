@@ -1,17 +1,21 @@
 import React from 'react'
-import { About, Navbar, Projects, Footer, Header } from './components'
-
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
+
+import { AboutTab, HomeTab, ProjectsTab } from './pages/index'
+import { Navbar, Footer } from './components/index'
+
 
 const App = () => {
   return (
     <div className='App'>
-      <div className='gradient__bg'>
-        <Navbar />
-        <Header />
-      </div>
-      <About />
-      <Projects />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<HomeTab />} />
+        <Route path='/portfolio' element={<HomeTab />} />
+        <Route path='/about' element={<AboutTab />} />
+        <Route path='/projects' element={<ProjectsTab />} />
+      </Routes>
       <Footer />
     </div>
   )

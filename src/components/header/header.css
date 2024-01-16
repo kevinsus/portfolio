@@ -86,6 +86,7 @@
 /* For the right image */
 .header-container_right img {
     width: 28rem;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     animation: profile_animate 8s ease-in-out infinite 1s;
     border: 3px solid black;
 }

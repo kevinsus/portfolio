@@ -1,0 +1,78 @@
+#aboutTab {
+    padding-top: 10rem;
+}
+
+/* .aboutMe-section2 > img {
+    position:static;
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+
+    left: 0;
+    top: 30%;
+    height: 25rem;
+    width: 100%;
+} */
+
+.aboutMe-section2 > .card1 {
+    padding: 3rem 2rem;
+    margin-bottom: 4rem;
+
+    color: white;
+    background-color: #323232;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.aboutMe-section2 > .card1:hover {
+    background-color: #323232;
+}
+
+/* CARD LOGO ~ Technical Skills */
+.aboutMe-section2 > .card1 > .card_logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0rem 8rem;
+}
+
+.aboutMe-section2 > .card1 > .card_logo-wrapper > .card_logo > .card_logo-icon {
+    font-size: 4rem;
+    padding: 0rem 0.5rem;
+}
+
+.aboutMe-section2 > .card1 > .card_logo-wrapper > .card_logo {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.aboutMe-section2 > .card1 > .card_logo-wrapper > .card_logo:hover {
+    transform: translateY(-15px);
+    border-color: rgb(171, 171, 171);
+}
+
+@media (max-width: 1200px){
+    .aboutMe-section_skills .card1:first-child {
+        display: block;
+    }
+    
+    .desk-pic img{
+        height: 20rem;
+        width: 100%;
+        aspect-ratio: 16/9;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+}
+
+@media (width < 900px) {
+
+    .aboutMe-section2 > .card_logo-container {
+        display: none;
+    }
+}

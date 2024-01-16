@@ -1,6 +1,5 @@
 import React from 'react'
 import './header.css'
-import {Link} from 'react-scroll'
 
 import hero from '../../assets/logo1.jpg'
 import resume from './Resume2023.pdf'
@@ -18,7 +17,7 @@ const Header = () => {
           <p>I am a passionate developer based in Sydney, Australia.</p>
           <div className='header-container_btn'>
             <a href={resume} target="_blank" rel="noopener noreferrer" className='header-container_btn__left'>Resume</a>
-            <Link to="contact" spy={true} smooth={true} offset={-100} duration={10} className='header-container_btn__right'>Hire Me</Link>
+            <a href='mailto: 99kevin.wong99@gmail.com' target="_blank" rel="noopener noreferrer" className='header-container_btn__right'>Email Me</a>
           </div>
         </div>
         <div className='header-container_right'>

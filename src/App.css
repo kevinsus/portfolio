@@ -10,7 +10,7 @@
 body {
     font-family: 'Libre Baskerville', serif;
     font-family: 'Outfit', sans-serif;
-    background-image: url('assets/triangle.jpg');
+    background-image: url('./assets/triangle.jpg');
     background-size: cover;
 }
 
