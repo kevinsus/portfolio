@@ -11,13 +11,13 @@ const AboutTab = () => {
     <div className='aboutMe-section' id='aboutTab'>
       {/* <h2 className='aboutMe-header'>About ME</h2> */}
 
-      <div className="aboutMe-section2">
+      {/* <div className="aboutMe-section2">
         <div className="card1 card1_me">
           <h4>More About ME 👦</h4>
           <br />
           <p className='p1'>Growing up in Jakarta, Indonesia, life was a blend of vibrant chaos and laid-back joy. Basketball is my hobby and like a normal 18 year old boy, I love to play PC game. At a normal day, I prefer to stay on bed 😴</p>
         </div>
-      </div>
+      </div> */}
 
       <div className='aboutMe-section_skills'>
         <div className="card1">
@@ -37,8 +37,8 @@ const AboutTab = () => {
           <h4>My Education 📖</h4>
           <br />
           <p className='p1'>Embarking on my sophomore year as a computer science major at the University of New South Wales, I am enthusiastic about translating my academic prowess into tangible and professional accomplishments.</p>
-          <p className='p1'>Demonstrating a commitment to excellence, I have consistently achieved a high Weighted Average Mark, distinguishing myself in key programming courses such as Data Structures and Algorithms, Object-Oriented Programming, Database Systems, and Computer Networks and Applications.</p>
-          <p className='p1'>My university journey has not only fortified my proficiency in multiple programming languages but has also finely tuned my problem-solving acumen. Eager to embrace new challenges and apply my skills in real-world scenarios, I am poised to contribute meaningfully to the dynamic field of computer science.</p>
+          {/* <p className='p1'>Demonstrating a commitment to excellence, I have consistently achieved a high Weighted Average Mark, distinguishing myself in key programming courses such as Data Structures and Algorithms, Object-Oriented Programming, Database Systems, and Computer Networks and Applications.</p> */}
+          {/* <p className='p1'>My university journey has not only fortified my proficiency in multiple programming languages but has also finely tuned my problem-solving acumen. Eager to embrace new challenges and apply my skills in real-world scenarios, I am poised to contribute meaningfully to the dynamic field of computer science.</p> */}
         </div>
 
         <div className="card1 card_logo-container">

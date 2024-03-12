@@ -1,8 +1,9 @@
 import React from 'react'
 import './header.css'
 
-import hero from '../../assets/logo1.jpg'
-import resume from './Resume2023.pdf'
+// import hero from '../../assets/logo1.jpg'
+import hero from '../../assets/logo.PNG'
+// import resume from './Resume2023.pdf'
 
 const Header = () => {
   return (
@@ -16,7 +17,8 @@ const Header = () => {
           <p>Welcome to my personal portfolio.</p>
           <p>I am a passionate developer based in Sydney, Australia.</p>
           <div className='header-container_btn'>
-            <a href={resume} target="_blank" rel="noopener noreferrer" className='header-container_btn__left'>Resume</a>
+            {/* <a href={resume} target="_blank" rel="noopener noreferrer" className='header-container_btn__left'>Resume</a> */}
+            <a href='https://github.com/kevinsus/' target="_blank" rel="noopener noreferrer" className='header-container_btn__left'>Github</a>
             <a href='mailto: 99kevin.wong99@gmail.com' target="_blank" rel="noopener noreferrer" className='header-container_btn__right'>Email Me</a>
           </div>
         </div>
